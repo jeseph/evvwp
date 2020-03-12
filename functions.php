@@ -42,6 +42,13 @@ if ( ! function_exists( 'evvwp_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		/**
+		 * Add support for wide and full alignment in the Block Editor.
+		 * 
+		 * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/
+		 */
+		add_theme_support( 'align-wide' );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'evvwp' ),
